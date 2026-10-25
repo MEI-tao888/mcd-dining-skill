@@ -1,0 +1,35 @@
+# 依赖与构建产物
+node_modules/
+dist/
+build/
+out/
+
+# 环境与密钥（绝对不要提交）
+.env
+.env.*
+!.env.example
+*.local
+
+# 日志与运行时
+*.log
+logs/
+tools/out/
+
+# 本地记忆（只存口味/行为；不含个人信息；不提交）
+memory/
+# 过敏/健康信息：只存本机，永不入库（即使以后放开 memory/ 也不许提交）
+memory/health.json
+*.local.json
+
+# 桌面宠物本机配置（路径/启动语可能含个人信息）
+pet/config.json
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# 演示临时文件
+*.tmp
+*.bak

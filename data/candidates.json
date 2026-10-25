@@ -1,0 +1,563 @@
+{
+  "schema": "easy-eat/candidates@2",
+  "generatedAt": "2026-10-23T11:12:55.869Z",
+  "generatedAtLocal": "2026-10-23 19:12:55",
+  "store": {
+    "storeCode": "1960216",
+    "storeName": "麦当劳武汉揽胜汇餐厅",
+    "businessStatus": true,
+    "businessStartTime": "07:00",
+    "businessEndTime": "01:00",
+    "distance": 1196,
+    "beCodePresent": false,
+    "autoSelected": false
+  },
+  "request": {
+    "mode": "pickup",
+    "city": "武汉",
+    "keyword": "华中农业大学",
+    "storeCode": "1960216",
+    "storeProvided": true,
+    "people": 1,
+    "budgetCents": 8000,
+    "budgetYuan": "80.00",
+    "avoidTerms": [],
+    "avoidPolicy": "preference-exclusion-only",
+    "addressIdProvided": false
+  },
+  "fulfillment": {
+    "requestedMode": "pickup",
+    "effectiveMode": "pickup",
+    "label": "到店自取",
+    "orderType": 1,
+    "beType": 1,
+    "beCodePresent": false,
+    "addressRef": null,
+    "addressIdProvided": false,
+    "storeSelection": {
+      "autoSelected": false,
+      "policy": "调用方指定 storeCode",
+      "distanceFieldAvailable": true,
+      "chosen": "1960216",
+      "considered": [
+        {
+          "storeCode": "1960335",
+          "storeName": "麦当劳武汉华中农业大学荟园餐厅",
+          "businessStatus": true,
+          "businessStartTime": "07:00",
+          "businessEndTime": "22:00",
+          "closeMinutes": 1320,
+          "distance": 714,
+          "beCodePresent": false
+        },
+        {
+          "storeCode": "1960216",
+          "storeName": "麦当劳武汉揽胜汇餐厅",
+          "businessStatus": true,
+          "businessStartTime": "07:00",
+          "businessEndTime": "01:00",
+          "closeMinutes": 1500,
+          "distance": 1196,
+          "beCodePresent": false
+        },
+        {
+          "storeCode": "1960371",
+          "storeName": "麦当劳武汉中南财大南湖校区餐厅",
+          "businessStatus": true,
+          "businessStartTime": "07:00",
+          "businessEndTime": "22:00",
+          "closeMinutes": 1320,
+          "distance": 2372,
+          "beCodePresent": false
+        },
+        {
+          "storeCode": "1960208",
+          "storeName": "麦当劳武汉保利心语餐厅",
+          "businessStatus": true,
+          "businessStartTime": "00:00",
+          "businessEndTime": "23:59",
+          "closeMinutes": 1439,
+          "distance": 2889,
+          "beCodePresent": false
+        },
+        {
+          "storeCode": "1960324",
+          "storeName": "麦当劳武汉南湖时尚城餐厅",
+          "businessStatus": true,
+          "businessStartTime": "07:00",
+          "businessEndTime": "00:15",
+          "closeMinutes": 1455,
+          "distance": 2993,
+          "beCodePresent": false
+        }
+      ]
+    },
+    "deliveryStoreSelection": null,
+    "fallback": null
+  },
+  "filters": [
+    {
+      "id": "fulfillment",
+      "label": "履约方式",
+      "applied": true,
+      "detail": "到店自取：orderType=1、beType=1、不传 beCode"
+    },
+    {
+      "id": "store-open",
+      "label": "门店营业",
+      "applied": true,
+      "detail": "businessStatus=true，营业时间 07:00-01:00"
+    },
+    {
+      "id": "avoid",
+      "label": "偏好排除",
+      "applied": false,
+      "detail": "本次未提供偏好排除词，未剔除任何商品（过敏安全仍需人工确认，本脚本不提供过敏保证）"
+    },
+    {
+      "id": "sellable",
+      "label": "可售",
+      "applied": true,
+      "detail": "商品须在门店菜单内，且 calculate-price 返回同名同量；共算价 3 次，失败 0 次"
+    },
+    {
+      "id": "coupons",
+      "label": "门店券",
+      "applied": true,
+      "detail": "扫描 2 张门店券：命中 0 组、生效 0 组；券只让已选中的那一份更值，不换类型、不加商品、不组合多张券"
+    },
+    {
+      "id": "budget",
+      "label": "预算",
+      "applied": true,
+      "detail": "上限 ¥80.00（8000 分），按 calculate-price 的 data.price 判断（开了券就按券后价）"
+    }
+  ],
+  "menu": {
+    "storeCode": "1960216",
+    "mode": "pickup",
+    "orderType": 1,
+    "beType": 1,
+    "categories": [
+      "人气热卖",
+      "精选单人餐",
+      "鸡肉汉堡 /卷",
+      "小食拼盘 /多人餐",
+      "蘸酱炸鸡",
+      "随心配 1+1",
+      "大堡口福 单人餐",
+      "巨无霸 牛鱼肉堡",
+      "安格斯MAX 厚牛堡",
+      "炸鸡",
+      "小食甜品 /其他",
+      "开心乐园",
+      "麦咖啡™",
+      "500 大卡套餐",
+      "饮品"
+    ],
+    "itemCount": 117,
+    "traceId": "81306150630e50f5017aa5d2da62c1ab"
+  },
+  "candidates": [
+    {
+      "id": "steady-1",
+      "type": "稳妥",
+      "typeNote": "熟悉的单人套餐，主食+小食+饮料一次给全，不用再想",
+      "rule": "分类名含「单人餐」的第一个（按门店菜单顺序）",
+      "items": [
+        {
+          "productCode": "9900004064",
+          "name": "精选单人餐三件套",
+          "quantity": 1,
+          "categories": [
+            "人气热卖",
+            "精选单人餐"
+          ],
+          "tags": [
+            "爆款",
+            "经典精选"
+          ],
+          "subtotalCents": 3450,
+          "subtotalYuan": "¥34.50"
+        }
+      ],
+      "price": {
+        "source": "calculate-price",
+        "field": "data.price",
+        "unit": "分",
+        "totalCents": 3450,
+        "totalYuan": "¥34.50",
+        "originalCents": 3450,
+        "originalYuan": "¥34.50",
+        "discountCents": 0,
+        "discountYuan": "¥0.00",
+        "breakdown": {
+          "productCents": 3450,
+          "productYuan": "¥34.50",
+          "deliveryCents": null,
+          "deliveryYuan": "—",
+          "packingCents": null,
+          "packingYuan": "—",
+          "note": "price = productPrice + deliveryPrice + packingPrice；originalPrice − discount = price；productPrice 已是折后商品价（discount 已在其中），不再二次减 discount"
+        },
+        "integrityOk": true,
+        "integrityDetail": {
+          "componentSumCents": 3450,
+          "componentCheckOk": true,
+          "discountCheckOk": true
+        },
+        "productList": [
+          {
+            "productCode": "9900004064",
+            "productName": "精选单人餐三件套",
+            "quantity": 1,
+            "subtotalCents": 3450,
+            "role": "product"
+          }
+        ],
+        "takeWay": [
+          {
+            "code": "eat-in",
+            "title": "堂食"
+          },
+          {
+            "code": "take-in-store",
+            "title": "外带"
+          }
+        ],
+        "traceId": "46e0eae1a6678e5f2941e263c363a24e",
+        "ms": 138
+      },
+      "budget": {
+        "applied": true,
+        "budgetCents": 8000,
+        "ok": true,
+        "remainingCents": 4550,
+        "basis": "data.price（到店自取无配送费/打包费字段）"
+      },
+      "coupon": {
+        "applied": false
+      }
+    },
+    {
+      "id": "light-2",
+      "type": "轻",
+      "typeNote": "份量收一点，吃完不犯困",
+      "rule": "分类名含「500大卡」的第一个",
+      "items": [
+        {
+          "productCode": "9900011128",
+          "name": "“堡”你欢乐套餐",
+          "quantity": 1,
+          "categories": [
+            "500 大卡套餐"
+          ],
+          "tags": [
+            "粉丝之选"
+          ],
+          "subtotalCents": 2800,
+          "subtotalYuan": "¥28.00"
+        }
+      ],
+      "price": {
+        "source": "calculate-price",
+        "field": "data.price",
+        "unit": "分",
+        "totalCents": 2800,
+        "totalYuan": "¥28.00",
+        "originalCents": 2800,
+        "originalYuan": "¥28.00",
+        "discountCents": 0,
+        "discountYuan": "¥0.00",
+        "breakdown": {
+          "productCents": 2800,
+          "productYuan": "¥28.00",
+          "deliveryCents": null,
+          "deliveryYuan": "—",
+          "packingCents": null,
+          "packingYuan": "—",
+          "note": "price = productPrice + deliveryPrice + packingPrice；originalPrice − discount = price；productPrice 已是折后商品价（discount 已在其中），不再二次减 discount"
+        },
+        "integrityOk": true,
+        "integrityDetail": {
+          "componentSumCents": 2800,
+          "componentCheckOk": true,
+          "discountCheckOk": true
+        },
+        "productList": [
+          {
+            "productCode": "9900011128",
+            "productName": "“堡”你欢乐套餐",
+            "quantity": 1,
+            "subtotalCents": 2800,
+            "role": "product"
+          }
+        ],
+        "takeWay": [
+          {
+            "code": "eat-in",
+            "title": "堂食"
+          },
+          {
+            "code": "take-in-store",
+            "title": "外带"
+          }
+        ],
+        "traceId": "e17e96feef503047ba6e72bb947d5165",
+        "ms": 152
+      },
+      "budget": {
+        "applied": true,
+        "budgetCents": 8000,
+        "ok": true,
+        "remainingCents": 5200,
+        "basis": "data.price（到店自取无配送费/打包费字段）"
+      },
+      "coupon": {
+        "applied": false
+      }
+    },
+    {
+      "id": "reward-3",
+      "type": "奖励",
+      "typeNote": "今天对自己好一点，主堡升级加个可分享的小食",
+      "rule": "厚牛堡 + 可分享小食 + 饮品",
+      "items": [
+        {
+          "productCode": "511781",
+          "name": "培根安格斯厚牛堡",
+          "quantity": 1,
+          "categories": [
+            "安格斯MAX 厚牛堡"
+          ],
+          "tags": [
+            "单品",
+            "100%安格斯牛肉"
+          ],
+          "subtotalCents": 3450,
+          "subtotalYuan": "¥34.50"
+        },
+        {
+          "productCode": "9900015726",
+          "name": "韩式甜辣酱鸡块8块",
+          "quantity": 1,
+          "categories": [
+            "小食拼盘 /多人餐"
+          ],
+          "tags": [
+            "上新",
+            "韩式风味"
+          ],
+          "subtotalCents": 1990,
+          "subtotalYuan": "¥19.90"
+        },
+        {
+          "productCode": "9900015561",
+          "name": "麦咖啡冰爽一夏",
+          "quantity": 1,
+          "categories": [
+            "麦咖啡™"
+          ],
+          "tags": [
+            "限定特惠",
+            "人气雪冰喝一夏"
+          ],
+          "subtotalCents": 990,
+          "subtotalYuan": "¥9.90"
+        }
+      ],
+      "price": {
+        "source": "calculate-price",
+        "field": "data.price",
+        "unit": "分",
+        "totalCents": 6430,
+        "totalYuan": "¥64.30",
+        "originalCents": 6430,
+        "originalYuan": "¥64.30",
+        "discountCents": 0,
+        "discountYuan": "¥0.00",
+        "breakdown": {
+          "productCents": 6430,
+          "productYuan": "¥64.30",
+          "deliveryCents": null,
+          "deliveryYuan": "—",
+          "packingCents": null,
+          "packingYuan": "—",
+          "note": "price = productPrice + deliveryPrice + packingPrice；originalPrice − discount = price；productPrice 已是折后商品价（discount 已在其中），不再二次减 discount"
+        },
+        "integrityOk": true,
+        "integrityDetail": {
+          "componentSumCents": 6430,
+          "componentCheckOk": true,
+          "discountCheckOk": true
+        },
+        "productList": [
+          {
+            "productCode": "511781",
+            "productName": "培根安格斯厚牛堡",
+            "quantity": 1,
+            "subtotalCents": 3450,
+            "role": "product"
+          },
+          {
+            "productCode": "9900015726",
+            "productName": "韩式甜辣酱鸡块8块",
+            "quantity": 1,
+            "subtotalCents": 1990,
+            "role": "product"
+          },
+          {
+            "productCode": "9900015561",
+            "productName": "麦咖啡冰爽一夏",
+            "quantity": 1,
+            "subtotalCents": 990,
+            "role": "product"
+          }
+        ],
+        "takeWay": [
+          {
+            "code": "eat-in",
+            "title": "堂食"
+          },
+          {
+            "code": "take-in-store",
+            "title": "外带"
+          }
+        ],
+        "traceId": "7033698acc8587324fb84646c694d108",
+        "ms": 159
+      },
+      "budget": {
+        "applied": true,
+        "budgetCents": 8000,
+        "ok": true,
+        "remainingCents": 1570,
+        "basis": "data.price（到店自取无配送费/打包费字段）"
+      },
+      "coupon": {
+        "applied": false
+      }
+    }
+  ],
+  "avoided": [],
+  "rejected": [],
+  "failures": [],
+  "calls": [
+    {
+      "tool": "query-nearby-stores",
+      "args": {
+        "city": "武汉",
+        "keyword": "华中农业大学",
+        "searchType": 2,
+        "beType": 1
+      },
+      "ok": true,
+      "ms": 705,
+      "traceId": "85be42c330a9f08d7b5336c5dc7eebed",
+      "message": "请求成功",
+      "serverTime": "2026-10-23 19:12:56"
+    },
+    {
+      "tool": "query-meals",
+      "args": {
+        "storeCode": "1960216",
+        "orderType": 1,
+        "beType": 1
+      },
+      "ok": true,
+      "ms": 307,
+      "traceId": "81306150630e50f5017aa5d2da62c1ab",
+      "message": "请求成功",
+      "serverTime": "2026-10-23 19:12:56"
+    },
+    {
+      "tool": "calculate-price",
+      "args": {
+        "storeCode": "1960216",
+        "orderType": 1,
+        "beType": 1,
+        "items": "9900004064×1"
+      },
+      "ok": true,
+      "ms": 138,
+      "traceId": "46e0eae1a6678e5f2941e263c363a24e",
+      "message": "请求成功",
+      "serverTime": "2026-10-23 19:12:57"
+    },
+    {
+      "tool": "calculate-price",
+      "args": {
+        "storeCode": "1960216",
+        "orderType": 1,
+        "beType": 1,
+        "items": "9900011128×1"
+      },
+      "ok": true,
+      "ms": 152,
+      "traceId": "e17e96feef503047ba6e72bb947d5165",
+      "message": "请求成功",
+      "serverTime": "2026-10-23 19:12:57"
+    },
+    {
+      "tool": "calculate-price",
+      "args": {
+        "storeCode": "1960216",
+        "orderType": 1,
+        "beType": 1,
+        "items": "511781×1,9900015726×1,9900015561×1"
+      },
+      "ok": true,
+      "ms": 159,
+      "traceId": "7033698acc8587324fb84646c694d108",
+      "message": "请求成功",
+      "serverTime": "2026-10-23 19:12:57"
+    },
+    {
+      "tool": "query-store-coupons",
+      "args": {
+        "storeCode": "1960216",
+        "orderType": 1,
+        "beType": 1
+      },
+      "ok": true,
+      "ms": 91,
+      "traceId": "c25453f0c47d2178909f6b652855989d",
+      "message": "请求成功",
+      "serverTime": "2026-10-23 19:12:57"
+    }
+  ],
+  "notes": [
+    "价格只来自 calculate-price 的 data.price，单位「分」；脚本不做价格算术，只做格式换算与一致性校验。",
+    "外送的配送费/打包费取返回字段 deliveryPrice / packingPrice，不手算；预算按含费用的 data.price 判断。",
+    "候选按固定类型顺序输出（稳妥 → 轻 → 奖励），不是按得分或价格排序。",
+    "组内换下一个方案只发生在「算价失败（不可售）」时，不发生在「更便宜」时。",
+    "--avoid 只是偏好排除：仅按菜单文字匹配，不构成过敏安全保证。",
+    "券只服务于已经选中的那一份：不为用券改类型、不加券专属商品、不组合多张券；券码不落盘。",
+    "隐私：addressId / 联系人 / 电话 / 完整地址不写本文件；地址只以 addressRef 出现。"
+  ],
+  "summary": {
+    "mode": "pickup",
+    "fallbackCode": null,
+    "candidateCount": 3,
+    "types": [
+      "稳妥",
+      "轻",
+      "奖励"
+    ],
+    "priceRange": {
+      "minCents": 2800,
+      "maxCents": 6430
+    },
+    "integrityAllOk": true,
+    "coupon": {
+      "mode": "auto",
+      "scanned": 2,
+      "matched": 0,
+      "applied": 0,
+      "error": null
+    },
+    "callCount": 6,
+    "failureCount": 0,
+    "rejectedCount": 0
+  }
+}

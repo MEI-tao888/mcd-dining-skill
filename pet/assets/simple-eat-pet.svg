@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <g stroke="#3A2018" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <!-- playful fries -->
+    <path fill="#F7C948" d="M188 171 164 74q-3-17 14-20l18-3q14-2 17 14l15 102z"/>
+    <path fill="#F7C948" d="m224 160 4-111q1-16 17-16h18q15 1 14 18l-3 113z"/>
+    <path fill="#F7C948" d="m263 161 29-99q5-15 20-10l17 7q14 6 9 21l-34 94z"/>
+    <!-- body / bun -->
+    <path fill="#D9342B" d="M119 213c0-45 61-76 137-76s137 31 137 76v150c0 52-61 91-137 91s-137-39-137-91z"/>
+    <path fill="#FFF4DE" d="M114 263c18-27 72-43 142-43s124 16 142 43v35c-25 26-76 39-142 39s-117-13-142-39z"/>
+    <path fill="#F7C948" d="M116 300c26 25 78 38 140 38s114-13 140-38l-5 62c-22 33-73 52-135 52s-113-19-135-52z"/>
+    <!-- face -->
+    <path fill="none" d="M194 282q14 17 28 0M290 282q14 17 28 0"/>
+    <path fill="#3A2018" stroke="none" d="M243 302q13-11 26 0-13 18-26 0"/>
+    <path fill="#F27B63" stroke="none" d="M168 310q17-12 31 0-14 13-31 0M313 310q17-12 31 0-14 13-31 0"/>
+    <!-- arms and shoes -->
+    <path fill="#FFF4DE" d="M120 327 76 354q-14 9-5 23l8 12q8 12 22 4l48-28z"/>
+    <path fill="#FFF4DE" d="m392 327 44 27q14 9 5 23l-8 12q-8 12-22 4l-48-28z"/>
+    <path fill="#FFF4DE" d="M169 428q-14 21-7 34 13 15 48 4l6-22zM343 428q14 21 7 34-13 15-48 4l-6-22z"/>
+    <!-- bun highlights and sesame -->
+    <ellipse cx="165" cy="235" rx="18" ry="9" fill="#F27B63" stroke="none" opacity=".7"/>
+    <ellipse cx="347" cy="235" rx="18" ry="9" fill="#F27B63" stroke="none" opacity=".7"/>
+    <ellipse cx="220" cy="184" rx="8" ry="4" fill="#FFF4DE" stroke="none" transform="rotate(-18 220 184)"/>
+    <ellipse cx="282" cy="177" rx="8" ry="4" fill="#FFF4DE" stroke="none" transform="rotate(15 282 177)"/>
+  </g>
+</svg>

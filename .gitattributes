@@ -1,0 +1,8 @@
+# 统一换行，避免 Windows 上 CRLF 污染脚本
+* text=auto
+
+*.mjs text eol=lf
+*.js  text eol=lf
+*.sh  text eol=lf
+*.md  text
+*.json text
